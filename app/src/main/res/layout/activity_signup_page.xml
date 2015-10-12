@@ -1,125 +1,170 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.example.saiprashanth.mainproject.signupPage">
 
-
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:text="NAME :"
-        android:id="@+id/textView"
-        android:layout_marginTop="40dp"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="130dp"
+        android:layout_width="fill_parent"
         android:layout_height="50dp"
         android:text="User Registration"
         android:id="@+id/userRegistration"
+        android:gravity="center"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/Name"
-        android:layout_toEndOf="@+id/textView"
-        android:layout_alignTop="@+id/textView"
-        android:layout_alignBottom="@+id/textView" />
-
+        android:layout_alignParentStart="true"
+        android:textSize="32sp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="NAME :"
+        android:id="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Name"
+        android:textSize="20sp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_alignTop="@+id/textView"
+        android:gravity="right"
+        android:layout_alignBottom="@+id/textView" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
         android:text="Password"
         android:id="@+id/password"
-        android:layout_marginTop="34dp"
+
         android:layout_below="@+id/Name"
         android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="170dp"
+        android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/UserPassword"
         android:layout_toEndOf="@+id/password"
-        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+
         android:layout_alignTop="@+id/password"
         android:layout_alignBottom="@+id/password" />
-
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
         android:text="Confirm Password"
         android:id="@+id/confirmPass"
         android:layout_below="@+id/password"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="37dp" />
+        android:layout_alignParentStart="true"/>
+
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/editText"
         android:layout_alignTop="@+id/confirmPass"
         android:layout_toEndOf="@+id/Name" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Age"
+        android:textSize="20sp"
         android:id="@+id/Age"
         android:layout_above="@+id/UserPassword"
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/UserPassword" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:id="@+id/EnterAge"
+        android:textSize="20sp"
         android:layout_above="@+id/UserPassword"
         android:layout_alignStart="@+id/UserPassword"
         android:layout_alignTop="@+id/Age"
         android:layout_toStartOf="@+id/editText" />
+        </LinearLayout>
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
         android:text="Phone"
+        android:textSize="20sp"
         android:id="@+id/Phone"
         android:layout_below="@+id/textView"
         android:layout_alignParentStart="true" />
 
     <EditText
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="fill_parent"
         android:id="@+id/EnteredPhone"
         android:layout_below="@+id/Name"
         android:layout_alignStart="@+id/EnterAge"
         android:layout_above="@+id/EnterAge" />
+        </LinearLayout>
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
         android:text="Address"
+        android:textSize="20sp"
         android:id="@+id/Address"
         android:layout_below="@+id/editText"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="48dp" />
+         />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:layout_height="34dp"
         android:id="@+id/EnteredAddress"
         android:layout_alignBottom="@+id/Address"
         android:layout_alignStart="@+id/UserPassword"
         android:layout_alignTop="@+id/Address"
         android:layout_alignEnd="@+id/UserPassword" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
     <TextView
         android:layout_width="wrap_content"
@@ -128,23 +173,24 @@
         android:id="@+id/Zipcode"
         android:layout_below="@+id/Address"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="38dp" />
+         />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:id="@+id/EnteredZip"
         android:layout_alignBottom="@+id/Zipcode"
         android:layout_alignEnd="@+id/EnteredAddress"
         android:layout_toEndOf="@+id/confirmPass" />
-
+    </LinearLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
+        android:layout_gravity="center"
         android:id="@+id/submit"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="53dp" />
 
-</RelativeLayout>
+</LinearLayout>
