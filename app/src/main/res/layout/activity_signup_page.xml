@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:text="NAME :"
+        android:text="Name: "
         android:id="@+id/textView"
         android:layout_alignParentStart="true" />
 
@@ -168,7 +168,7 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:text="Zip Code"
         android:id="@+id/Zipcode"
         android:layout_below="@+id/Address"
